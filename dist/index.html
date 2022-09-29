@@ -3,12 +3,30 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Digitális képkeret</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
-<body>
-    <p>This is a template</p>    
+<body class="dark-mode">
+    <div class="container">
+        <!--<p>This is a template</p>-->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6"><input type="text" id="imgUrl" placeholder="Kép URL"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><input type="text" id="imgWidth" placeholder="Kép szélessége"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><input type="text" id="imgBorderThickness" placeholder="Keret vastagsága"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><input type="text" id="imgBorderColor" placeholder="Keret színe (HEX, RGB)"></div>
+        </div>
+        <div class="row">
+            <div class="imgContainer"><img class="img-fluid" src="../src/cica.jpeg" alt="cica" id="imgOutput"></div>
+            
+        </div>
+        <div></div>
+    </div>
+    
+    <footer class="bg-dark">
+        <span>Kecseti Péter 2/14S, 2022. 09. 29.</span>
+        <button class="btn btn-light" id="btnToggleDarkMode">Dark mode</button>
+    </footer>
     <script src='main.js'></script>
 </body>
 </html>

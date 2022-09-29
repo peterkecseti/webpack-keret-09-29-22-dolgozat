@@ -1,0 +1,19 @@
+.imgContainer{
+    padding-top: 20px;
+}
+footer{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    height: 50px;
+}
+footer span{
+    vertical-align: middle;
+}
+button{
+    float: right;
+}
+.dark-mode{
+    transition: 0.5s;
+    background-color: dimgrey;
+}
